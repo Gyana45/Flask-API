@@ -1,0 +1,26 @@
+{% block head %}
+
+<title>Table Operation</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Calculator</h1>
+
+    <div class="form">
+        <form action="/table_operation" method="POST">
+            <label for="operation">Choose a Operation</label>
+
+<select id="operation" name="operation">
+  <option value="create">create</option>
+  <option value="insert_one">insert_one</option>
+  <option value="update">update</option>
+    <option value="bulk_insert">bulk_insert</option>
+  <option value="delete">delete</option>
+</select>
+<input type="submit" value="GO">
+        </form>
+    </div>
+</div>
+{% endblock %}

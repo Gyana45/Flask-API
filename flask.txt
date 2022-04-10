@@ -2,3 +2,5 @@ Flask is a framework which allows u to convert any function/method into api.
 its a python based library
 
 1. pip install flask in terminal
+
+
